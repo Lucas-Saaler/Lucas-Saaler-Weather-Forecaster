@@ -18,23 +18,28 @@
     <div class="row w-100">
         <div class="col-sm-3 mx-5">
             <h2 class="p-2 text-center">Search for a City</h2>
-            <form>
+            <form id="cityForm">
                 <div class="mb-3">
                     <input type="text" id="cityInput" class="form-control">
                 </div>
                 <button type="submit" class="btn btn-secondary bg-gradient w-100">Submit</button>
-                <h4 id="pastSearchHeader" class="my-4 text-center"></h4>
-                <ul id="pastSearches" class="bg-light text-black text-center">
+                <h4 class="my-4 text-center">Previous Searches</h4>
+                <ul class="bg-light text-black text-center">
+                    <li id="search1" class="border-top border-dark"></li>
+                    <li id="search2" class="border-top border-dark"></li>
+                    <li id="search3" class="border-top border-dark"></li>
+                    <li id="search4" class="border-top border-dark"></li>
+                    <li id="search5" class="border-top border-dark"></li>
                 </ul>
             </form>
         </div>
         <div class="col-sm-8">
             <div class="border border-2 border-white p-4">
-                <h2 id="city" class="py-1">Borgus <span id="date">06/14/2222</span></h2>
-                <p>Temperature: <span id="currentTemp">911F</span></p>
-                <p>Wind: <span id="currentWind">624MPH</span></p>
-                <p>Humidity: <span id="currentHumidity">471%</span></p>
-                <p>UV Index: <span id="currentUVI">Way too high</span></p>
+                <h2 id="city" class="py-1">Please search for a city</h2>
+                <p>Temperature: <span id="currentTemp"></span></p>
+                <p>Wind: <span id="currentWind"></span></p>
+                <p>Humidity: <span id="currentHumidity"></span></p>
+                <p>UV Index: <span id="currentUVI"></span></p>
             </div>
             <div class="py-3">
                 <h4>5 Day Forecast:</h4>
@@ -42,55 +47,55 @@
                     <div class="col-sm-2">
                       <div class="card bg-secondary bg-gradient">
                         <div class="card-body">
-                          <h5 id="date1" class="card-title">06/15/2222</h5>
+                          <h5 id="dateOne" class="card-title"></h5>
                           <img src="" alt="" id="icon1">
-                          <p id="temp1" class="card-text">Temp: 800F</p>
-                          <p id="wind1" class="card-text">Wind: 800 MPH</p>
-                          <p id="humidity1" class="card-text">Humidity: 800%</p>
+                          <p id="tempOne" class="card-text"></p>
+                          <p id="windOne" class="card-text"></p>
+                          <p id="humidityOne" class="card-text"></p>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-2">
                       <div class="card bg-secondary bg-gradient">
                         <div class="card-body">
-                            <h5 id="date1" class="card-title">06/15/2222</h5>
+                            <h5 id="dateTwo" class="card-title"></h5>
                             <img src="" alt="" id="icon1">
-                            <p id="temp1" class="card-text">Temp: 800F</p>
-                            <p id="wind1" class="card-text">Wind: 800 MPH</p>
-                            <p id="humidity1" class="card-text">Humidity: 800%</p>
+                            <p id="tempTwo" class="card-text"></p>
+                            <p id="windTwo" class="card-text"></p>
+                            <p id="humidityTwo" class="card-text"></p>
                           </div>
                       </div>
                     </div>
                     <div class="col-sm-2">
                         <div class="card card bg-secondary bg-gradient">
                             <div class="card-body">
-                                <h5 id="date1" class="card-title">06/15/2222</h5>
+                                <h5 id="dateThree" class="card-title"></h5>
                                 <img src="" alt="" id="icon1">
-                                <p id="temp1" class="card-text">Temp: 800F</p>
-                                <p id="wind1" class="card-text">Wind: 800 MPH</p>
-                                <p id="humidity1" class="card-text">Humidity: 800%</p>
+                                <p id="tempThree" class="card-text"></p>
+                                <p id="windThree" class="card-text"></p>
+                                <p id="humidityThree" class="card-text"></p>
                               </div>
                         </div>
                       </div>
                       <div class="col-sm-2">
                         <div class="card card bg-secondary bg-gradient">
                             <div class="card-body">
-                                <h5 id="date1" class="card-title">06/15/2222</h5>
+                                <h5 id="dateFour" class="card-title"></h5>
                                 <img src="" alt="" id="icon1">
-                                <p id="temp1" class="card-text">Temp: 800F</p>
-                                <p id="wind1" class="card-text">Wind: 800 MPH</p>
-                                <p id="humidity1" class="card-text">Humidity: 800%</p>
+                                <p id="tempFour" class="card-text"></p>
+                                <p id="windFour" class="card-text"></p>
+                                <p id="humidityFour" class="card-text"></p>
                               </div>
                         </div>
                       </div>
                       <div class="col-sm-2">
                         <div class="card card bg-secondary bg-gradient">
                             <div class="card-body">
-                                <h5 id="date1" class="card-title">06/15/2222</h5>
+                                <h5 id="dateFive" class="card-title"></h5>
                                 <img src="" alt="" id="icon1">
-                                <p id="temp1" class="card-text">Temp: 800F</p>
-                                <p id="wind1" class="card-text">Wind: 800 MPH</p>
-                                <p id="humidity1" class="card-text">Humidity: 800%</p>
+                                <p id="tempFive" class="card-text"></p>
+                                <p id="windFive" class="card-text"></p>
+                                <p id="humidityFive" class="card-text"></p>
                               </div>
                         </div>
                       </div>
@@ -98,6 +103,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment-with-locales.min.js" integrity="sha512-vFABRuf5oGUaztndx4KoAEUVQnOvAIFs59y4tO0DILGWhQiFnFHiR+ZJfxLDyJlXgeut9Z07Svuvm+1Jv89w5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/script.js"></script>
 </body>
 
