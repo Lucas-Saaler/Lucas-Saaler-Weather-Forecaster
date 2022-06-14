@@ -3,3 +3,15 @@ ul{
     margin: 0;
     padding-left: 0;
 }
+
+.card{
+    width:117%;
+}
+
+.hide{
+    display:none;
+}
+
+.card-body{
+    font-size:smaller;
+}
