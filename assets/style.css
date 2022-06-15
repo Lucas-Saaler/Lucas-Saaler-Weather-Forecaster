@@ -1,17 +1,35 @@
+/* gets rid of bullet points */
 ul{
     list-style-type: none;
     margin: 0;
     padding-left: 0;
 }
 
+/* Gives you the pointer cursor when hovering over history */
+li:hover{
+    cursor:pointer;
+}
+
+/* These 3 are dynamically added via javascript */
+.fair{
+    background-color: green;
+}
+
+.moderate{
+    background-color: yellow;
+}
+
+.severe{
+    background-color: red;
+}
+
+/* Removed via javascript */
 .hide{
     display:none;
 }
 
+/* Adjusts font size */
 .card-body{
     font-size:smaller;
 }
 
-li:hover{
-    cursor:pointer;
-}
